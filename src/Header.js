@@ -1,11 +1,12 @@
 import React from "react";
+import Logo from "./react-logo.png"
 
 
-function Header() {
+export default function Header() {
     return (
         <header>
             <nav className="nav">
-                <img src="./react-logo.png" className="nav-logo" />
+                <img src={Logo} width="40px" className="nav-logo" alt="" />
                 <ul className="nav-items">
                     <li>Pricing</li>
                     <li>About</li>
@@ -15,5 +16,3 @@ function Header() {
         </header>
     )
 }
-
-export default function Header();
